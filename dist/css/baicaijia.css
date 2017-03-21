@@ -1,0 +1,156 @@
+body {
+  background-color: #fff;
+}
+.top {
+  padding: 0 30px;
+  position: relative;
+  background-color: #ff841d;
+}
+.top h1 {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+}
+.top a.left {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 16px;
+  color: white;
+}
+.top .appdown {
+  position: absolute;
+  padding: 7px;
+  right: 5px;
+  top: 0px;
+}
+.top .appdown a {
+  display: block;
+  height: 100%;
+}
+.top .appdown a img {
+  height: 34px;
+}
+.nav {
+  overflow: hidden;
+  position: relative;
+  height: 38px;
+}
+.nav ul {
+  position: absolute;
+  width: 200px;
+}
+.nav ul li {
+  text-align: center;
+  height: 38px;
+  line-height: 36px;
+  float: left;
+  padding: 0 12px;
+}
+.nav ul li:nth-of-type(1) a {
+  border-bottom: 2px solid red;
+  color: red;
+}
+.nav ul li a {
+  display: block;
+  height: 100%;
+  font-size: 14px;
+  color: #333;
+}
+.content ul li {
+  margin: 6px 0;
+  padding: 10px 5px;
+}
+.content ul li .imgbox {
+  width: 130px;
+  height: 130px;
+}
+.content ul li .imgbox img {
+  display: block;
+  width: 100%;
+}
+.content ul li .info {
+  padding-left: 15px;
+  overflow: hidden;
+}
+.content ul li .info .title h4 {
+  font-size: 14px;
+}
+.content ul li .info .title p {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 4px;
+  padding: 12px 0;
+  color: red;
+}
+.content ul li .info .title p i,
+.content ul li .info .title p em,
+.content ul li .info .title p del {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.content ul li .info .title p del {
+  color: #333;
+}
+.content ul li .info .footer .bar {
+  padding-bottom: 10px;
+}
+.content ul li .info .footer .bar i {
+  text-align: center;
+  padding: 0 25px;
+  font-size: 12px;
+  border: 1px solid red;
+  background-color: pink;
+  border-radius: 9px;
+  color: white;
+  font-weight: 900;
+}
+.content ul li .info .footer .bar b {
+  color: red;
+  margin-left: 10px;
+}
+.content ul li .info .footer > a {
+  padding: 3px 3px;
+  border: 1px dashed red;
+  color: red;
+}
+.content ul li .info .footer > a:nth-of-type(2) {
+  border-radius: 3px;
+  float: right;
+  background-color: red;
+  color: white;
+}
+.foot {
+  margin-top: 10px;
+  line-height: 34px;
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.foot a {
+  color: #5a5a5a;
+  text-align: center;
+  width: 30%;
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+}
+.foot a:last-child {
+  width: 40%;
+}
+.bottom {
+  text-align: center;
+  background-color: #efefef;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 15px 0;
+}
+.bottom p {
+  color: #5a5a5a;
+  font-size: 12px;
+}
+.bottom p a {
+  font-size: 12px;
+  color: red;
+}

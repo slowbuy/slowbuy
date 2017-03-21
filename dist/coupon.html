@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/gongneng.css"/>
+</head>
+<body>
+<div class="top">
+    <h1>优惠价</h1>
+
+    <a href="#" class="fl left"><span class="mui-icon mui-icon-arrowleft"></span></a>
+
+    <div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+</div>
+
+<div class="content">
+    <ul class="clearfix">
+
+    </ul>
+</div>
+
+<div class='moretalk'>
+    <a href="#">首页 > 优惠券</a>
+</div>
+
+<div class="foot clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">返回顶部</a>
+</div>
+
+<div class="bottom">
+    <p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+
+</body>
+<script type="text/html" id="content">
+    {{each result as v}}
+        <li class="fl">
+            <a href="{{v.couponLink}}?couponid={{v.couponId}}">
+                <img src="{{v.couponImg}}" alt=""/>
+                <p>{{v.couponTitle}}</p>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src='js/template.js'></script>
+<script src="js/gongneng.js"></script>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+    <link rel="stylesheet" href="base.css"/>
+    <link rel="stylesheet" href="homepage.css"/>
+</head>
+<body>
+<script src='jquery-2.2.2.min.js'></script>
+<div class="top">
+    <div class="fl logo"><a href="#"><img src="images/header_logo.png" alt=""/></a></div>
+    <div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+</div>
+<div class="search">
+    <input type="submit" value="搜索"/>
+    <input type="search" placeholder="请输入你想比价的商品"/>
+</div>
+<div class="
+classify">
+    <ul class="clearfix">
+
+    </ul>
+</div>
+<div class="advertisement">
+    <div class="head"><a href="#">超值折扣推荐<span class="fr mui-icon-extra mui-icon-extra-arrowrightcricle"></span></a></div>
+    <div class="content">
+        <ul>
+
+        </ul>
+        <div class="more"><a href="#">更多优惠信息&gt;&gt;</a></div>
+    </div>
+    <div class="sort">
+        <div class="title"><a href="#">品牌排行<span class="fr mui-icon-extra mui-icon-extra-arrowrightcricle"></span></a></div>
+    </div>
+</div>
+<div class="foot clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">返回顶部</a>
+</div>
+<div class="bottom">
+<p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+</body>
+<script src='template.js'></script>
+<script type="text/html" id="classify">
+    {{if data}}
+    {{each data as value i}}
+        <li>
+            <a href="#">
+                {{#value.img}}
+                <p>{{value.name}}</p>
+            </a>
+        </li>
+    {{/each}}
+    {{/if}}
+</script>
+<script type="text/html" id="acontent">
+    {{if data}}
+    {{each data as value i}}
+        <li>
+            <a href="#" class="clearfix">
+                <div class="fl imgbox">{{#value.productImg2}}</div>
+                <div class="info">
+                    <p class="title">{{value.productName}}&nbsp;<span>{{value.productPinkage}}</span></p>
+                    <p class="root clearfix"><span class="fl">{{value.productFrom}}|{{value.productTime}}</span><span class="fr">{{value.productComCount}}</span><span class="mui-icon mui-icon-chat fr"></span></p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+    {{/if}}
+</script>
+<script src='homepage.js'></script>
+</html>

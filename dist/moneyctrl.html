@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+</head>
+<body>
+<div class="top">
+    <h1>省钱控 - 最新优惠</h1>
+
+    <a href="#" class="fl left"><span class="mui-icon mui-icon-arrowleft"></span></a>
+    <div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+</div>
+<div class="advertisement">
+    <div class="content">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+
+<div class="button clearfix">
+    <div><a href="javascript:void(0)" id='up'>上一页</a></div>
+    <div>
+        <select id="select">
+
+        </select>
+    </div>
+    <div><a href="javascript:void(0)" id="down">下一页</a></div>
+</div>
+
+<div class='moretalk'>
+    <a href="#">首页 > 省钱控</a>
+</div>
+
+<div class="foot clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">返回顶部</a>
+</div>
+
+<div class="bottom">
+    <p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+
+</body>
+<script type="text/html" id="acontent">
+    {{if result}}
+    {{each result as value i}}
+    <li>
+        <a href="ctrldetails.html?productid={{value.productId}}" class="clearfix">
+            <div class="fl imgbox">{{#value.productImg2}}</div>
+            <div class="info">
+                <p class="title">{{value.productName}}&nbsp;<span>{{value.productPinkage}}</span></p>
+                <p class="root clearfix"><span class="fl">{{value.productFrom}}|{{value.productTime}}</span><span class="fr">{{value.productComCount}}</span><span class="mui-icon mui-icon-chat fr"></span></p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+<script type="text/html" id="option">
+
+    <option value={{newpage}}> {{newpage}}/{{total}}</option>
+
+</script>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src='js/template.js'></script>
+<script src="js/moneyctrl.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/ppngjt.css"/>
+</head>
+<body>
+<div class="top">
+    <div class="fl logo"><a href="#"><img src="images/header_logo.png" alt=""/></a></div>
+    <div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+</div>
+<div class="search">
+    <input type="submit" value="搜索"/>
+    <input type="search" placeholder="请输入你想比价的商品"/>
+</div>
+
+<div class="content">
+    <ul>
+
+    </ul>
+    <div class="title">销量排行</div>
+</div>
+
+
+
+<div class="foot clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">返回顶部</a>
+</div>
+<div class="bottom">
+    <p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+</body>
+<script type="text/html" id="content">
+    {{each result as v}}
+        <li>
+            <h4><span>{{v.brandId+1}}</span><span>{{v.brandName}}</span></h4>
+            <p>{{v.brandInfo}}</p>
+        </li>
+    {{/each}}
+</script>
+
+<script src='js/jquery-2.2.2.min.js'></script>
+<script src='js/template.js'></script>
+
+<script src='js/ppngjt.js'></script>
+</html>

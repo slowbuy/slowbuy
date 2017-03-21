@@ -1,0 +1,177 @@
+body {
+  background-color: #fff;
+}
+.top {
+  height: 50px;
+  background-color: #ff841d;
+  border-bottom: 1px solid #ff841d;
+}
+.top .logo {
+  padding: 12px;
+  width: 75%;
+  margin-left: 5px;
+}
+.top .logo a {
+  display: block;
+  height: 100%;
+}
+.top .logo a img {
+  height: 25px;
+}
+.top .appdown {
+  padding: 7px;
+}
+.top .appdown a {
+  display: block;
+  height: 100%;
+}
+.top .appdown a img {
+  height: 34px;
+}
+.search {
+  height: 50px;
+  padding: 10px;
+  position: relative;
+}
+.search input {
+  border: none;
+}
+.search input:nth-of-type(1) {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 63px;
+  height: 30px;
+  background-color: #ff841d;
+  border-radius: 15px;
+  color: white;
+}
+.search input:nth-of-type(2) {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding-left: 5%;
+  background-color: #f1f1f1;
+  font-size: 16px;
+}
+.title {
+  padding-left: 10px;
+  border-top: 1px solid #efefef;
+  background-color: #ebebeb;
+  font-size: 14px;
+}
+.title a {
+  line-height: 38px;
+  padding: 10px 0;
+  color: black;
+}
+.title button {
+  margin-top: 4px;
+  margin-right: 8px;
+  padding: 5px 16px;
+  border-radius: 5px;
+}
+.advertisement {
+  background-color: #f1f1f1;
+}
+.advertisement .content {
+  padding-bottom: 10px;
+}
+.advertisement .content ul {
+  background-color: #fff;
+}
+.advertisement .content ul li {
+  padding: 14px 8px;
+}
+.advertisement .content ul li a {
+  display: block;
+}
+.advertisement .content ul li a .imgbox img {
+  width: 100px;
+  height: 100px;
+}
+.advertisement .content ul li a .info {
+  padding-left: 90px;
+}
+.advertisement .content ul li a .info .title1 {
+  color: #333333;
+  font-size: 15px;
+  line-height: 19px;
+}
+.advertisement .content ul li a .info .plice {
+  font-size: 18px;
+  margin-top: 6px;
+  color: red;
+}
+.advertisement .content ul li a .info .root {
+  margin-top: 4px;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.button {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  background-color: #efefef;
+  text-align: center;
+}
+.button div {
+  float: left;
+  font-size: 14px;
+  width: 33.33%;
+  line-height: 30px;
+}
+.button div a {
+  background-color: #d4d4d4;
+  padding: 9px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.button div:nth-of-type(2) {
+  background-color: #efefef;
+  height: 34px;
+  padding: 0 12px;
+}
+.button div:nth-of-type(2) select {
+  vertical-align: middle;
+  background-color: white;
+  display: block;
+  height: 100%;
+  line-height: 30px;
+  border: 1px solid #efefef;
+  padding: 0;
+  padding-left: 30px;
+}
+.button div:nth-of-type(2) select option {
+  padding-left: 35px;
+}
+.foot {
+  line-height: 34px;
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.foot a {
+  color: #5a5a5a;
+  text-align: center;
+  width: 30%;
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+}
+.foot a:last-child {
+  width: 40%;
+}
+.bottom {
+  text-align: center;
+  background-color: #efefef;
+  padding: 15px 0;
+}
+.bottom p {
+  color: #5a5a5a;
+  font-size: 12px;
+}
+.bottom p a {
+  font-size: 12px;
+  color: red;
+}

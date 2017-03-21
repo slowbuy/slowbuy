@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/details.css"/>
+</head>
+<body>
+<div class="top">
+    <h1>商品比价</h1>
+    <a href="#" class="fl"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+</div>
+<div class="search">
+    <input type="submit" value="搜索"/>
+    <input type="search" placeholder="请输入你想比价的商品"/>
+</div>
+
+
+<div class="title">
+
+</div>
+
+
+<div class="details">
+
+</div>
+
+<div class="tab">
+    <ul class="clearfix">
+        <li>比价购买</li>
+        <li>产品参数</li>
+        <li>优选评价</li>
+    </ul>
+</div>
+<div class="buy">
+    <ul id='buy'>
+        <!--<li>京东商城  <button class="fr">去购买</button> <span class="fr">&yen;1099</span></li>-->
+    </ul>
+    <p class="explain">*世纪价格以个网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟</p>
+</div>
+<div class="pingjia">网友评价</div>
+
+
+<div class="talk">
+
+</div>
+<div class='moretalk'>
+ <a href="#">查看更多评价</a>
+</div>
+<div class="foot clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">返回顶部</a>
+</div>
+
+<div class="bottom">
+    <p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+
+</body>
+
+<script type="text/html" id="title">
+    {{if result}}
+    <a>首页></a>
+    <a>{{kind}}></a>
+    <a>{{result[0].productName}}></a>
+    <button class="fr">筛选</button>
+    {{/if}}
+</script>
+
+
+<script type="text/html" id="buytemplate">
+    {{if result}}
+        {{#result[0].bjShop}}
+    {{/if}}
+</script>
+
+<script type="text/html" id="details">
+    {{if result}}
+    <div class="imgbox">
+       {{#result[0].productImg}}
+    </div>
+    <div class="info">
+        <h3>{{result[0].productName}}</h3>
+        <p>
+            <span>最 低 价&nbsp;:</span>
+            <span>&yen;1099.00</span>
+            <span class="fr">最低来自&nbsp;:&nbsp;京东商城</span>
+        </p>
+        <p>
+            <span>全网评论&nbsp;:&nbsp;292858</span>
+            <span class="fr">优选评论&nbsp;:&nbsp;4252条</span>
+        </p>
+    </div>
+    {{/if}}
+</script>
+
+
+
+
+<script type="text/html" id="option">
+
+    <option value={{newpage}}> {{newpage}}/{{total}}</option>
+
+</script>
+
+
+<script type="text/html" id="talk">
+    {{if result}}
+    {{each result as value}}
+    <div class="nei">
+        <p class="clearfix"><span class="fl">{{value.comName}}</span><span class="fr">{{value.comTime}}</span></p>
+        <p>{{value.comFrom}}</p>
+        <p>{{value.comContent}}</p>
+        <p><a href="#" class="a">回复</a></p>
+    </div>
+    {{/each}}
+    {{/if}}
+
+</script>
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src='js/template.js'></script>
+<script src="js/details.js"></script>
+</html>

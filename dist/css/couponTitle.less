@@ -1,0 +1,158 @@
+@topbgc: #ff841d;
+@efefef: #efefef;
+@f1f1f1: #f1f1f1;
+@c4c4c4: #c4c4c4;
+
+body{
+  background-color: #fff;
+}
+
+.top {
+  padding: 0 30px;
+  position: relative;
+  background-color: #ff841d;
+  h1{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 44px;
+    color: white;
+
+  }
+  a.left{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+    color: white;
+  }
+  .appdown {
+    position: absolute;
+    padding: 7px;
+    right: 5px;
+    top: 0px;
+    a {
+      display: block;
+      height: 100%;
+      img {
+        height: 34px;
+      }
+    }
+  }
+}
+
+.content{
+  ul{
+    li{
+      margin-top: 5px;
+      .imgbox{
+        float: left;
+        width: 100px;
+        height: 80px;
+        margin-top: 15px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .info{
+        padding-left: 10px;
+        font-size: 14px;
+        overflow: hidden;
+        .title{
+          line-height: 24px;
+          color: #333;
+        }
+        span{
+          color: #575757;
+          font-weight: 700;
+        }
+        p{
+          margin-top: 10px;
+          color: #E70;
+        }
+      }
+    }
+  }
+}
+
+.moretalk{
+  margin-top: 20px;
+  background-color: #ebebeb;
+  a{
+    padding-left: 5px;
+    display: block;
+    line-height: 32px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 0 1px #666;
+    font-size: 14px;
+  }
+}
+
+.foot {
+  margin-top: 10px;
+  line-height: 34px;
+  background-color: @efefef;
+  border-top: 1px solid @c4c4c4;
+  border-bottom: 1px solid @c4c4c4;
+  a {
+    color: #5a5a5a;
+    text-align: center;
+    width: 30%;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid @c4c4c4;
+    &:last-child {
+      width: 40%;
+    }
+  }
+}
+
+.bottom{
+  text-align: center;
+  background-color: @efefef;
+  border-bottom: 1px solid @c4c4c4;
+  padding: 15px 0;
+  p{
+    color: #5a5a5a;
+    font-size: 12px;
+    a {
+      font-size: 12px;
+      color: red;
+    }
+  }
+}
+
+.mask{
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  .imgbox{
+    margin-top: 50%;
+    img{
+      display: block;
+      margin: auto;
+    }
+  }
+  .jiantou{
+    margin-top: 50%;
+    transform: translateY(60px);
+    color: white;
+    span{
+      background-color: rgba(0,0,0,.7);
+      border-radius: 5px;
+      line-height: 60px;
+      font-size: 50px;
+      &:nth-of-type(1){
+        display: block;
+        margin-left: 20px;
+      }
+      &:nth-of-type(2){
+        margin-right: 20px;
+      }
+    }
+  }
+}

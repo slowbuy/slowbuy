@@ -1,0 +1,142 @@
+body {
+  background-color: #fff;
+}
+.top {
+  padding: 0 30px;
+  position: relative;
+  background-color: #ff841d;
+}
+.top h1 {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+}
+.top a.left {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 16px;
+  color: white;
+}
+.top .appdown {
+  position: absolute;
+  padding: 7px;
+  right: 5px;
+  top: 0px;
+}
+.top .appdown a {
+  display: block;
+  height: 100%;
+}
+.top .appdown a img {
+  height: 34px;
+}
+.content ul li {
+  margin-top: 5px;
+}
+.content ul li .imgbox {
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin-top: 15px;
+}
+.content ul li .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+.content ul li .info {
+  padding-left: 10px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.content ul li .info .title {
+  line-height: 24px;
+  color: #333;
+}
+.content ul li .info span {
+  color: #575757;
+  font-weight: 700;
+}
+.content ul li .info p {
+  margin-top: 10px;
+  color: #E70;
+}
+.moretalk {
+  margin-top: 20px;
+  background-color: #ebebeb;
+}
+.moretalk a {
+  padding-left: 5px;
+  display: block;
+  line-height: 32px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 1px #666;
+  font-size: 14px;
+}
+.foot {
+  margin-top: 10px;
+  line-height: 34px;
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.foot a {
+  color: #5a5a5a;
+  text-align: center;
+  width: 30%;
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+}
+.foot a:last-child {
+  width: 40%;
+}
+.bottom {
+  text-align: center;
+  background-color: #efefef;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 15px 0;
+}
+.bottom p {
+  color: #5a5a5a;
+  font-size: 12px;
+}
+.bottom p a {
+  font-size: 12px;
+  color: red;
+}
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.mask .imgbox {
+  margin-top: 50%;
+}
+.mask .imgbox img {
+  display: block;
+  margin: auto;
+}
+.mask .jiantou {
+  margin-top: 50%;
+  transform: translateY(60px);
+  color: white;
+}
+.mask .jiantou span {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  line-height: 60px;
+  font-size: 50px;
+}
+.mask .jiantou span:nth-of-type(1) {
+  display: block;
+  margin-left: 20px;
+}
+.mask .jiantou span:nth-of-type(2) {
+  margin-right: 20px;
+}

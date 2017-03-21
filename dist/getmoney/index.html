@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><link rel="stylesheet" href="css/mui.min.css"><link rel="stylesheet" href="css/icons-extra.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/getmoney.css"></head><body><div class="top"><div class="fl logo"><a href="#"><img src="images/header_logo.png" alt=""></a></div><div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""></a></div></div><div class="search"><input type="submit" value="搜索"> <input type="search" placeholder="请输入你想比价的商品"></div><div class="title"><select class="select"></select></div><div class="button clearfix"><div><a href="javascript:void(0)" id="up">上一页</a></div><div><select id="select"></select></div><div><a href="javascript:void(0)" id="down">下一页</a></div></div><div class="foot clearfix"><a href="#">登录</a> <a href="#">注册</a> <a href="#">返回顶部</a></div><div class="bottom"><p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p><p>m.manmanbuy.com</p></div></body><script type="text/html" id="acontent">{{if result}}
+    {{each result as value i}}
+    <li>
+        <a href="#" class="clearfix">
+            <div class="fl imgbox">{{#value.productImg}}</div>
+            <div class="info">
+                <p class="title1">{{value.productName}}</p>
+                <p class="plice">{{value.productPrice}}</p>
+                <p class="root clearfix"><span class="fl">{{value.productQuote}}</span><span>{{value.productCom}}</span></p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+    {{/if}}</script><script type="text/html" id="title">{{if result}}
+        <a>首页></a>
+        <a>全部分类></a>
+        <a>{{result[0].category}}></a>
+        <button class="fr">筛选</button>
+    {{/if}}</script><script type="text/html" id="option"><option value="{{newpage}}">{{newpage}}/{{total}}</option>
+<!--</script>--><script src="js/jquery-2.2.2.min.js"></script><script src="js/template.js"></script><script src="js/getmoney.js"></script></html>

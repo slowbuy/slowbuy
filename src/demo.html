@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .father{
+            overflow: hidden;
+            background-color: blue;
+        }
+        .div{
+            width: 33.333%;
+            height: 50px;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+
+        }
+        a{
+            background-color: yellow;
+            padding: 20px 10px;
+        }
+        select{
+            height: 100%;
+            text-align: center;
+            padding-left: 20px;
+            vertical-align: middle;
+            display: block;
+        }
+        option{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="div"><a href="#" class="shang">shang</a></div>
+    <div class="div">
+        <select name="" id="se">
+            <option value="1" >1</option>
+            <option value="2">2</option>
+            <option value="3" >3</option>
+            <option value="4" selected='true'>4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    <div class="div" id="next"><a href="javascript:void(0)">shang</a></div>
+</div>
+<div id="append">
+
+</div>
+</body>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script>
+    $(function(){
+//        console.log($('#se').find('option'));
+        $('#se').on('change', function () {
+            console.log($(this).val());
+        })
+        var index=0
+        $('#next').on('click',function () {
+            index++;
+            $('#se').find('option').eq(index).prop('selected','true');
+            $('#se').trigger('change');
+        })
+
+
+
+
+        $('.div .shang').clone(true).appendTo($('#append'))
+        console.log($('.div').find('.shang'));
+    })
+</script>
+</html>

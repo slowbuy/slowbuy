@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/gsproduct.css"/>
+</head>
+<body>
+<div class="top">
+    <h1>凑单品</h1>
+
+    <a href="#" class="fl left"><span class="mui-icon mui-icon-arrowleft"></span></a>
+
+    <div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+</div>
+
+<div class="content">
+    <div class="title">
+        <div class="b clearfix">
+            <a href="#">京东 <span class="mui-icon mui-icon-arrowdown"></span></a>
+            <a href="#">东北 <span class="mui-icon mui-icon-arrowdown"></span></a>
+            <a href="#">价格 <span class="mui-icon mui-icon-arrowdown"></span></a>
+            <span class="mui-icon mui-icon-search"></span>
+        </div>
+        <div class="c">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="d">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <div class="matter">
+        <ul class="clearfix">
+
+
+        </ul>
+    </div>
+</div>
+
+<div class="foot clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">返回顶部</a>
+</div>
+
+<div class="bottom">
+    <p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p>
+    <p>m.manmanbuy.com</p>
+</div>
+
+
+</body>
+<script type="text/html" id="c">
+    {{each result as v}}
+        {{if v.shopName}}
+            <li value="{{v.shopId}}">{{v.shopName}}</li>
+            {{else}}
+                <li value={{v.areaId}}>{{v.areaName}}</li>
+        {{/if}}
+    {{/each}}
+</script>
+<script type="text/html" id="matter">
+    {{each result as v}}
+    <li>
+        <a href="#">
+            <div class="imgbox">
+                <img src="{{v.productImg}}" alt=""/>
+            </div>
+            <p>{{v.productName}}</p>
+            <p class="plice">{{v.productPrice}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src='js/template.js'></script>
+<script src="js/gsproduct.js"></script>
+</html>

@@ -1,0 +1,218 @@
+@topbgc: #ff841d;
+@efefef: #efefef;
+@f1f1f1: #f1f1f1;
+@c4c4c4: #c4c4c4;
+.top {
+  padding: 0 30px;
+  position: relative;
+  background-color: #ff841d;
+  h1{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 44px;
+    color: white;
+
+  }
+  a.left{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+    color: white;
+  }
+  .appdown {
+    position: absolute;
+    padding: 7px;
+    right: 5px;
+    top: 0px;
+    a {
+      display: block;
+      height: 100%;
+      img {
+        height: 34px;
+      }
+    }
+  }
+}
+
+.advertisement {
+  background-color: @f1f1f1;
+  .head {
+    margin-top: 4px;
+    margin-bottom: 1px;
+    padding-left: 10px;
+    background-color: #ff9000;
+    a {
+      line-height: 35px;
+      font-size: 18px;
+      font-weight: 900;
+      color: #fff;
+      span {
+        font-weight: 100;
+        margin-right: 5px;
+        line-height: 35px;
+      }
+    }
+  }
+  .content {
+    padding-bottom: 10px;
+    ul {
+      background-color: #fff;
+      li {
+        padding: 14px 8px;
+        a {
+          display: block;
+          .imgbox {
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .info {
+            padding-left: 90px;
+            .title {
+              color: #333333;
+              font-size: 15px;
+              line-height: 19px;
+              height: 57px;
+              span {
+                color: #ff6c00;
+              }
+            }
+            .root {
+              margin-top: 30px;
+              color: #a1a1a1;
+              font-size: 12px;
+              span {
+                &:nth-of-type(3) {
+                  font-size: 12px;
+                  margin-top: 2px;
+                  margin-right: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .more {
+      text-align: center;
+      line-height: 30px;
+
+      a {
+        color: #5a5a5a;
+        display: block;
+        margin: 10px;
+        font-size: 13px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+      }
+    }
+  }
+  .sort {
+    margin-bottom: 6px;
+    border-bottom: 1px solid @f1f1f1;
+    .title {
+      margin-bottom: 1px;
+      padding-left: 10px;
+      background-color: @topbgc;
+      a {
+        line-height: 35px;
+        font-size: 18px;
+        font-weight: 900;
+        color: #fff;
+        span {
+          margin-right: 5px;
+          line-height: 35px;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
+
+.button{
+  padding-top: 20px;
+  padding-bottom: 25px;
+  background-color:  @efefef;
+  text-align: center;
+  div{
+    float: left;
+    font-size: 14px;
+    width: 33.33%;
+    line-height: 30px;
+    a{
+      background-color: #d4d4d4;
+      padding: 9px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    &:nth-of-type(2){
+      background-color:  @efefef;
+      height: 34px;
+      padding: 0 12px;
+      select{
+        vertical-align: middle;
+        background-color:  white;
+        display: block;
+        height: 100%;
+        line-height: 30px;
+        border: 1px solid @efefef;
+        padding: 0;
+        padding-left: 30px;
+        option{
+          padding-left: 35px;
+        }
+      }
+    }
+  }
+}
+
+.moretalk{
+  background-color: #ebebeb;
+  padding: 10px 0;
+  a{
+    padding-left: 5px;
+    display: block;
+    line-height: 32px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 0 1px #666;
+    font-size: 14px;
+  }
+
+}
+
+.foot {
+  line-height: 34px;
+  background-color: @efefef;
+  border-top: 1px solid @c4c4c4;
+  border-bottom: 1px solid @c4c4c4;
+  a {
+    color: #5a5a5a;
+    text-align: center;
+    width: 30%;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid @c4c4c4;
+    &:last-child {
+      width: 40%;
+    }
+  }
+
+
+}
+
+.bottom{
+  text-align: center;
+  background-color: @efefef;
+  padding: 15px 0;
+  p{
+    color: #5a5a5a;
+    font-size: 12px;
+    a {
+      font-size: 12px;
+      color: red;
+    }
+  }
+}

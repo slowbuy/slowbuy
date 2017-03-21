@@ -1,0 +1,141 @@
+body {
+  background-color: #fff;
+}
+.top {
+  padding: 0 30px;
+  position: relative;
+  background-color: #ff841d;
+}
+.top h1 {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+}
+.top a.left {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 16px;
+  color: white;
+}
+.top .appdown {
+  position: absolute;
+  padding: 7px;
+  right: 5px;
+  top: 0px;
+}
+.top .appdown a {
+  display: block;
+  height: 100%;
+}
+.top .appdown a img {
+  height: 34px;
+}
+.content {
+  padding: 0 7px 20px;
+}
+.content h1 {
+  padding: 13px 7px 5px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.content .price {
+  color: #ff6c00;
+  padding-left: 3px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.content .info {
+  color: #8f8f94;
+  padding: 12px 3px;
+}
+.content .xiangqing {
+  font-size: 15px;
+}
+.content .xiangqing img {
+  float: right;
+  width: 120px;
+  height: 200px;
+}
+.content .bigimg img {
+  width: 100%;
+}
+.buy {
+  padding: 20px 20px;
+}
+.buy a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 40px;
+  background-color: #ff9000;
+  color: white;
+  border-radius: 5px;
+}
+.pinglun {
+  padding: 4px 10px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.pinglun form {
+  position: relative;
+}
+.pinglun form textarea {
+  height: 105px;
+  border: 1px solid #c4c4c4;
+}
+.pinglun form input {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  padding: 10px 25px;
+  background-color: #ff9000;
+  border: none;
+  font-size: 16px;
+}
+.moretalk {
+  background-color: #ebebeb;
+}
+.moretalk a {
+  padding-left: 5px;
+  display: block;
+  line-height: 32px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 1px #666;
+  font-size: 14px;
+}
+.foot {
+  margin-top: 10px;
+  line-height: 34px;
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.foot a {
+  color: #5a5a5a;
+  text-align: center;
+  width: 30%;
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+}
+.foot a:last-child {
+  width: 40%;
+}
+.bottom {
+  text-align: center;
+  background-color: #efefef;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 15px 0;
+}
+.bottom p {
+  color: #5a5a5a;
+  font-size: 12px;
+}
+.bottom p a {
+  font-size: 12px;
+  color: red;
+}

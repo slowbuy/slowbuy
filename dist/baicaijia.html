@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/baicaijia.css"/>
+</head>
+<body>
+<div class="top">
+    <h1>白菜价</h1>
+
+    <a href="#" class="fl left"><span class="mui-icon mui-icon-arrowleft"></span></a>
+
+    <div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+</div>
+
+<div class="nav">
+    <ul class="title1 clearfix">
+
+    </ul>
+</div>
+
+<div class="content">
+    <ul>
+
+    </ul>
+</div>
+
+<div class="foot clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">返回顶部</a>
+</div>
+<div class="bottom">
+    <p>
+        <a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</div>
+</body>
+<script type="text/html" id="title">
+    {{each result as value}}
+        <li><a href="#" value='{{value.titleId}}'>{{value.title}}</a></li>
+    {{/each}}
+</script>
+<!--<span>&yen;</span>1385 &nbsp;<span>&yen;23154</span>-->
+<script type="text/html" id="content">
+    {{each result as value}}
+        <li class="clearfix">
+            <div class="fl imgbox">
+                {{#value.productImg}}
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h4>{{#value.productName}}</h4>
+                    <p>{{#value.productPrice}}</p>
+                </div>
+                <div class="footer">
+                    {{#value.productCouponRemain}}
+                    {{#value.productCoupon}}
+                    {{#value.productHref}}
+                </div>
+            </div>
+        </li>
+    {{/each}}
+</script>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src='js/template.js'></script>
+<script src="js/baicaijia.js"></script>
+</html>
