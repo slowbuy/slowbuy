@@ -117,10 +117,15 @@ body {
 }
 .mask .imgbox {
   margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -40%);
+  width: 180px;
+  height: 160px;
 }
 .mask .imgbox img {
   display: block;
-  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 .mask .jiantou {
   margin-top: 50%;

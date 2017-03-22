@@ -1,13 +1,43 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><link rel="stylesheet" href="css/mui.min.css"><link rel="stylesheet" href="css/icons-extra.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/rather.css"></head><body><div class="top"><div class="fl logo"><a href="#"><img src="images/header_logo.png" alt=""></a></div><div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""></a></div></div><div class="search"><input type="submit" value="搜索"> <input type="search" placeholder="请输入你想比价的商品"></div><div class="list"><ul class="clearfix"></ul></div><div class="foot clearfix"><a href="#">登录</a> <a href="#">注册</a> <a href="#">返回顶部</a></div><div class="bottom"><p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p><p>m.manmanbuy.com</p></div></body><script src="js/jquery-2.2.2.min.js"></script><script src="js/template.js"></script><script type="text/html" id="list">{{if result}}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/rather.css">
+</head>
+<body>
+<div class="top">
+    <div class="fl logo"><a href="#"><img src="images/header_lo.ogpng" alt=""></a></div>
+    <div class="fr appdown"><a href="#"><img src="images/header_app.png" alt=""></a></div>
+</div>
+<div class="search"><input type="submit" value="搜索"> <input type="search" placeholder="请输入你想比价的商品"></div>
+<div class="list">
+    <ul class="clearfix"></ul>
+</div>
+<div class="foot clearfix"><a href="#">登录</a> <a href="#">注册</a> <a href="#">返回顶部</a></div>
+<div class="bottom"><p><a href="#">手机APP下载</a>&nbsp;慢慢买手机版--掌上比价平台</p>
+
+    <p>m.manmanbuy.com</p></div>
+</body>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/template.js"></script>
+<script type="text/html" id="list">{{if result}}
+{{each result as value i}}
+<li><a href="javascript: void(0)">{{value.title}} <span class="mui-icon mui-icon-arrowdown mui-icon-arrowup"></span></a>
+</li>
+<li class="listcontent"></li>
+{{/each}}
+{{/if}}</script>
+<script type="text/html" id="listcontent">{{if result}}
+<ul class="clearfix">
     {{each result as value i}}
-        <li><a href="javascript: void(0)">{{value.title}} <span class="mui-icon mui-icon-arrowdown mui-icon-arrowup"></span></a>
-        </li>
-        <li class="listcontent"></li>
+    <li><a href="getmoney.html?categoryId={{value.categoryId}}">{{value.category}}</a></li>
     {{/each}}
-    {{/if}}</script><script type="text/html" id="listcontent">{{if result}}
-    <ul class="clearfix">
-        {{each result as value i}}
-            <li><a href="getmoney.html?categoryId={{value.categoryId}}">{{value.category}}</a></li>
-        {{/each}}
-    </ul>
-    {{/if}}</script><script src="js/rather.js"></script></html>
+</ul>
+{{/if}}</script>
+<script src="js/rather.js"></script>
+</html>

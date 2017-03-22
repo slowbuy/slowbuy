@@ -1,1 +1,329 @@
-body{background-color:#fff}.top{height:50px;background-color:#ff841d;border-bottom:1px solid #ff841d}.top .logo{padding:12px;width:75%;margin-left:5px}.top .logo a{display:block;height:100%}.top .logo a img{height:25px}.top .appdown{padding:7px}.top .appdown a{display:block;height:100%}.top .appdown a img{height:34px}.search{height:50px;padding:10px;position:relative}.search input{border:none}.search input:nth-of-type(1){position:absolute;top:10px;right:10px;width:63px;height:30px;background-color:#ff841d;border-radius:15px;font-size:16px}.search input:nth-of-type(2){text-align:left;width:100%;height:100%;border-radius:15px;padding-left:5%;background-color:#f1f1f1}.bottom,.classify ul li,.foot a{text-align:center}.classify{padding:6px 0}.classify ul li{width:25%;margin-top:16px;float:left}.classify ul li a{display:block;height:100%}.classify ul li a img{margin:0 auto;width:50px;height:50px}.classify ul li:last-child{margin-bottom:16px}.advertisement{background-color:#f1f1f1}.advertisement .head{margin-top:4px;margin-bottom:1px;padding-left:10px;background-color:#ff9000}.advertisement .head a{line-height:35px;font-size:18px;font-weight:900;color:#fff}.advertisement .head a span{font-weight:100;margin-right:5px;line-height:35px}.advertisement .content{padding-bottom:10px}.advertisement .content ul{background-color:#fff}.advertisement .content ul li{padding:14px 8px}.advertisement .content ul li a{display:block}.advertisement .content ul li a .imgbox img{width:100px;height:100px}.advertisement .content ul li a .info{padding-left:90px}.advertisement .content ul li a .info .title{color:#333;font-size:15px;line-height:19px;height:57px}.advertisement .content ul li a .info .title span{color:#ff6c00}.advertisement .content ul li a .info .root{margin-top:30px;color:#a1a1a1;font-size:12px}.advertisement .content ul li a .info .root span:nth-of-type(3){font-size:12px;margin-top:2px;margin-right:2px}.advertisement .content .more{text-align:center;line-height:30px}.advertisement .content .more a{color:#5a5a5a;display:block;margin:10px;font-size:13px;border:1px solid #ddd;border-radius:3px}.advertisement .sort{margin-bottom:6px;border-bottom:1px solid #f1f1f1}.advertisement .sort .title{margin-bottom:1px;padding-left:10px;background-color:#ff841d}.bottom,.foot{background-color:#efefef;border-bottom:1px solid #c4c4c4}.advertisement .sort .title a{line-height:35px;font-size:18px;font-weight:900;color:#fff}.advertisement .sort .title a span{margin-right:5px;line-height:35px;font-weight:100}.foot{margin-top:10px;line-height:34px;border-top:1px solid #c4c4c4}.foot a{color:#5a5a5a;width:30%;float:left;font-size:14px;border-right:1px solid #c4c4c4}.foot a:last-child{width:40%}.bottom{padding:15px 0}.bottom p{color:#5a5a5a;font-size:12px}.bottom p a{font-size:12px;color:red}
+
+
+@media only screen and (max-width: 1080px), only screen and (max-device-width: 1080px) {
+    html, body {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 960px), only screen and (max-device-width: 960px) {
+    html, body {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+    html, body {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+    html, body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 540px), only screen and (max-device-width: 540px) {
+    html, body {
+        font-size: 13.5px;
+    }
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    html, body {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 414px), only screen and (max-device-width: 414px) {
+    html, body {
+        font-size: 10.35px;
+    }
+}
+
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+    html, body {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px), only screen and (max-device-width: 375px) {
+    html, body {
+        font-size: 9.375px;
+    }
+}
+
+@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
+    html, body {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+    html, body {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 240px), only screen and (max-device-width: 240px) {
+    html, body {
+        font-size: 6px;
+    }
+}
+
+body {
+    background-color: #fff
+}
+
+.top {
+    height: 3.125rem;
+    background-color: #ff841d;
+    border-bottom: 1px solid #ff841d
+}
+
+.top .logo {
+    padding: 12px;
+    width: 75%;
+    margin-left: 0.3125rem;
+}
+
+.top .logo a {
+    display: block;
+    height: 100%
+}
+
+.top .logo a img {
+    height: 1.5625rem;
+}
+
+.top .appdown {
+    padding: 0.4375rem;
+}
+
+.top .appdown a {
+    display: block;
+    height: 100%
+}
+
+.top .appdown a img {
+    height: 2.125rem;
+}
+
+.search {
+    height: 3.125rem;
+    padding: 0.625rem;
+    position: relative
+}
+
+.search input {
+    border: none
+}
+
+.search input:nth-of-type(1) {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    width: 3.9375rem;
+    height: 1.875rem;
+    background-color: #ff841d;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.search input:nth-of-type(2) {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding-left: 5%;
+    background-color: #f1f1f1
+}
+
+.bottom, .classify ul li, .foot a {
+    text-align: center
+}
+
+.classify {
+    padding: 0.375rem 0
+}
+
+.classify ul li {
+    width: 25%;
+    margin-top: 1rem;
+    float: left
+}
+
+.classify ul li a {
+    display: block;
+    height: 100%
+}
+
+.classify ul li a img {
+    margin: 0 auto;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.classify ul li:last-child {
+    margin-bottom: 1rem;
+}
+
+.advertisement {
+    background-color: #f1f1f1
+}
+
+.advertisement .head {
+    margin-top: 0.25rem;
+    margin-bottom: 0.0625rem;
+    padding-left: 0.625rem;
+    background-color: #ff9000
+}
+
+.advertisement .head a {
+    line-height: 2.1875rem;
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #fff
+}
+
+.advertisement .head a span {
+    font-weight: 100;
+    margin-right: 0.3125rem;
+    line-height: 2.1875rem;
+}
+
+.advertisement .content {
+    padding-bottom: 0.625rem;
+}
+
+.advertisement .content ul {
+    background-color: #fff
+}
+
+.advertisement .content ul li {
+    padding: 0.875rem 0.5rem;
+}
+
+.advertisement .content ul li a {
+    display: block
+}
+
+.advertisement .content ul li a .imgbox img {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.advertisement .content ul li a .info {
+    padding-left: 5.625rem;
+}
+
+.advertisement .content ul li a .info .title {
+    color: #333;
+    font-size: 0.9375rem;
+    line-height: 1.1875rem;
+    height: 3.5625rem;
+}
+
+.advertisement .content ul li a .info .title span {
+    color: #ff6c00
+}
+
+.advertisement .content ul li a .info .root {
+    margin-top: 1.875rem;
+    color: #a1a1a1;
+    font-size: 0.75rem;
+}
+
+.advertisement .content ul li a .info .root span:nth-of-type(3) {
+    font-size: 0.75rem;
+    margin-top: 0.125rem;
+    margin-right: 0.125rem;
+}
+
+.advertisement .content .more {
+    text-align: center;
+    line-height: 1.875rem;
+}
+
+.advertisement .content .more a {
+    color: #5a5a5a;
+    display: block;
+    margin: 0.625rem;
+    font-size: 0.8125rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.advertisement .sort {
+    margin-bottom: 0.375rem;
+    border-bottom: 1px solid #f1f1f1
+}
+
+.advertisement .sort .title {
+    margin-bottom: 1px;
+    padding-left: 0.625rem;
+    background-color: #ff841d
+}
+
+.bottom, .foot {
+    background-color: #efefef;
+    border-bottom: 1px solid #c4c4c4
+}
+
+.advertisement .sort .title a {
+    line-height: 35px;
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #fff
+}
+
+.advertisement .sort .title a span {
+    margin-right: 0.3125rem;
+    line-height: 2.1875rem;
+    font-weight: 100
+}
+
+.foot {
+    margin-top: 0.625rem;
+    line-height: 2.125rem;
+    border-top: 1px solid #c4c4c4
+}
+
+.foot a {
+    color: #5a5a5a;
+    width: 30%;
+    float: left;
+    font-size: 0.875rem;
+    border-right: 1px solid #c4c4c4
+}
+
+.foot a:last-child {
+    width: 40%
+}
+
+.bottom {
+    padding: 15px 0
+}
+
+.bottom p {
+    color: #5a5a5a;
+    font-size: 0.75rem;
+}
+
+.bottom p a {
+    font-size: 0.75rem;
+    color: red
+}

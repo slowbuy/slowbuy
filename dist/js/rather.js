@@ -10,12 +10,12 @@ $(function(){
         })
     }
 
-
+    //渲染列表
     ajax('http://192.168.15.22:3000/api/getcategorytitle',function(data){
         var html=template('list',data);
         $('.list').find('ul').html(html);
 
-
+        //点击加载相对应的数据
         $('.list').find('>ul>li:even').on('click', function () {
             var that=$(this);
             if(that.next().attr('class').indexOf('ajax')<=0){
@@ -28,7 +28,7 @@ $(function(){
                         window.sessionStorage.setItem('kind1',$(this).find('a').html());
                     });
 
-
+                    that.next().siblings('.listcontent').hide();
                 });
             }else{
                 that.next().toggle().siblings('.listcontent').hide();
